@@ -1,4 +1,4 @@
-# 'Multivariate-Time-Series-Forecasting-with-LSTMs-in-Keras-for-CORN-SWEET-Terminal-Market-Price'
+# `Multivariate-Time-Series-Forecasting-with-LSTMs-in-Keras-for-CORN-SWEET-Terminal-Market-Price`
 street-sign-classifier
 This project fulfills the requirements for UMSL's CS5390 project. It implements a street sign classifier using deep learning.
 

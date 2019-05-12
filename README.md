@@ -1,6 +1,6 @@
 # `Multivariate-Time-Series-Forecasting-with-LSTMs-in-Keras-for-CORN-SWEET-Terminal-Market-Price`
 
-This project fulfills the requirements for [UMSL's CS5390 project](https://github.com/badriadhikari/2019-Spring-DL/tree/master/project_guidelines). It implements a sweet corn termical market price forecasting using LSTMs in Keras.
+This project fulfills the requirements for [UMSL's CS5390 project](https://github.com/badriadhikari/2019-Spring-DL/tree/master/project_guidelines). It implements a sweet corn termical market price forecasting using LSTMs in Keras by Weiling(Geoffrey) Zhu.
 
 ## Report
 

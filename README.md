@@ -4,8 +4,6 @@ This project fulfills the requirements for [UMSL's CS5390 project](https://githu
 
 ## Report
 
-First run monthly price 
-
 The report for this project can be viewed [here](https://github.com/Hopding/street-sign-classifier/blob/master/notebooks/report.md).
 
 ## Prerequisites

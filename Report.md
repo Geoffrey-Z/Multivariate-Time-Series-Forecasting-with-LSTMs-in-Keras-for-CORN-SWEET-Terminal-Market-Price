@@ -22,4 +22,4 @@ The CORN_SWEET_Price_Weekly_Multivariate_Forecasting dataset is splited into  in
 
 ## Input Data Visualization
 
-![download (6).png](download (6).png)
+![Data_Visualization.png](assets/Data_Visualization.png)

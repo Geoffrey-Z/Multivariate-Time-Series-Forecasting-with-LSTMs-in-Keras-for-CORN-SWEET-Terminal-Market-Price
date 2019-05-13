@@ -4,7 +4,7 @@ This project fulfills the requirements for [UMSL's CS5390 project](https://githu
 
 ## Report
 
-The report for this project can be viewed [here](https://github.com/Hopding/street-sign-classifier/blob/master/notebooks/report.md).
+The report for this project can be viewed [here](https://github.com/Geoffrey-Z/Multivariate-Time-Series-Forecasting-with-LSTMs-in-Keras-for-CORN-SWEET-Terminal-Market-Price/blob/master/Report.md).
 
 ## Prerequisites
 

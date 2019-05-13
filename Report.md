@@ -24,6 +24,33 @@ The CORN_SWEET_Price_Weekly_Multivariate_Forecasting dataset is splited into  in
 
 The CORN_SWEET_Price_Weekly_Multivariate_Forecasting dataset contains 1099 records, 4 Columns. It contains weekly terminal prices for BI-COLOR, WHITE and YELLOW CORN-SWEET in U.S. from 1/1/1998 to 12/31/2018. The visualization below showing the 21 years of data for each Variety.
 
-contains a single image from each class in the dataset.
-
 ![Data_Visualization.png](assets/Data_Visualization.png)
+
+## Network Architecture
+
+I used a LSTM to forecastin the price of sweet corn. I chose this type of model because they are known to perform quite well on time Series datasets, such as Airline Passengers prediction problem and Air Pollution Forecasting. The architecture of the final version of the Keras model is shown below.
+
+```python
+# design network
+model = Sequential()
+model.add(LSTM(50, input_shape=(train_X.shape[1], train_X.shape[2])))
+model.add(Dense(1))
+model.compile(loss='mae', optimizer='adam')
+# fit network
+history = model.fit(train_X, train_y, epochs=50, batch_size=72, validation_data=(test_X, test_y), verbose=2, shuffle=False)
+# plot history
+pyplot.plot(history.history['loss'], label='train')
+pyplot.plot(history.history['val_loss'], label='test')
+pyplot.legend()
+pyplot.show()
+```
+
+This architecture is a relatively simple convolutional network. It achieves an accuracy of ~96% on the validation dataset. This was the simplest and most accurate model out of several variants I tried. Listed below are some of the variants I tried out.
+
+- Decreasing the number of filters in the first convolutional layer from 64 to 16. This resulted in a faster training time. However, the accuracy decreased by ~2%.
+- Decreasing the number of filters in the first convolutional layer from 64 to 32. This resulted in a faster training time. However, the accuracy decreased by ~1%.
+- Adding a 0.2 dropout layer after the first max pooling layer. This did not affect accuracy.
+- Adding another convolutional and max pooling layer after the first max pooling layer. This did not affect accuracy.
+- Increasing the number of units in the first dense layer from 64 to 128. This did not affect accuracy.
+- Decreasing the number of units in the first dense layer from 64 to 32. This decreased accuracy by ~10%.
+

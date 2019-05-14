@@ -35,9 +35,9 @@ I used a LSTM to forecastin the price of sweet corn. I chose this type of model 
 model = Sequential()
 model.add(LSTM(50, input_shape=(train_X.shape[1], train_X.shape[2])))
 model.add(Dense(1))
-model.compile(loss='mae', optimizer='adam')
+model.compile(loss='mae', optimizer='adam',metrics=['mse'])
 # fit network
-history = model.fit(train_X, train_y, epochs=50, batch_size=72, validation_data=(test_X, test_y), verbose=2, shuffle=False)
+history = model.fit(train_X, train_y, epochs=125, batch_size=1, validation_data=(test_X, test_y), verbose=2, shuffle=False)
 # plot history
 pyplot.plot(history.history['loss'], label='train')
 pyplot.plot(history.history['val_loss'], label='test')
@@ -45,12 +45,18 @@ pyplot.legend()
 pyplot.show()
 ```
 
-This architecture is a relatively simple convolutional network. It achieves an accuracy of ~96% on the validation dataset. This was the simplest and most accurate model out of several variants I tried. Listed below are some of the variants I tried out.
+This architecture is a relatively simple LSTM network. It achieves an accuracy with an r-squared value of 0.85 on the validation dataset. This was the simplest and most accurate model out of several variants I tried. Listed below are some of the variants I tried out.
 
-- Decreasing the number of filters in the first convolutional layer from 64 to 16. This resulted in a faster training time. However, the accuracy decreased by ~2%.
-- Decreasing the number of filters in the first convolutional layer from 64 to 32. This resulted in a faster training time. However, the accuracy decreased by ~1%.
-- Adding a 0.2 dropout layer after the first max pooling layer. This did not affect accuracy.
-- Adding another convolutional and max pooling layer after the first max pooling layer. This did not affect accuracy.
-- Increasing the number of units in the first dense layer from 64 to 128. This did not affect accuracy.
-- Decreasing the number of units in the first dense layer from 64 to 32. This decreased accuracy by ~10%.
+- Increasing the number of epochs from 125 to 1000. This resulted by 8 times training time. However, the accuracy decreased by ~4.8%. The model stared overfiting at 123th epoch. 
+- Increasing the number of batch_size from 1 to 72. This resulted in a faster training time. However, the accuracy decreased by ~1%.
+- Increasing the number of neurons in the first hidden layer from 50 to 4. This resulted in a faster training time. However, the accuracy decreased by ~1%.
+- Adding another hidden layer after the first hidden layer. This did not affect accuracy.
+
+## Results
+
+When trained for 10 epochs with a batch size of 50, this network is able to obtain an accuracy of 96% with a ~0.15 loss on the test dataset.
+
+## Benchmarks
+
+There are many different traffic sign datasets and benchmarks in common use today. Generalizing across datasets, state-of-the-art models are usually able to reach accuracies in the 94-98% range. This puts my model in the lower end of the spectrum for state-of-the-art models.
 

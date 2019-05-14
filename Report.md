@@ -60,3 +60,14 @@ When trained for 10 epochs with a batch size of 50, this network is able to obta
 
 There are many different traffic sign datasets and benchmarks in common use today. Generalizing across datasets, state-of-the-art models are usually able to reach accuracies in the 94-98% range. This puts my model in the lower end of the spectrum for state-of-the-art models.
 
+## Learning Curves
+
+Shown below is a plot of the model's loss on the training and validation datasets per epoch during training.
+
+![Learning_Curves](assets/Learning_Curves.png)
+
+## Training Time
+
+The relationship between training time and number of epochs is linear.
+
+The relationship between training time and dataset size is also linear.

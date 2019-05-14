@@ -62,6 +62,9 @@ We can see that the model did an excellent job of fitting both the training and 
 ## Benchmarks
 
 There are many different Time Series Forecasting benchmarks in common use today. Generalizing across datasets, Multivariate-Time-Series-Forecasting-with-LSTMs and Univariate-Time-Series-Forecasting-with-LSTMs not make much diffrent of the accuracy (0.82 R2 vs. 0.85 R2), but training time increas.
+- [How to Create an ARIMA Model for Time Series Forecasting in Python](https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/)
+- [Time Series Prediction with LSTM Recurrent Neural Networks in Python with Keras](https://machinelearningmastery.com/time-series-prediction-lstm-recurrent-neural-networks-python-keras/)
+- [Multivariate Time Series Forecasting with LSTMs in Keras](https://machinelearningmastery.com/multivariate-time-series-forecasting-lstms-keras/)
 
 ## Learning Curves
 
@@ -98,6 +101,7 @@ __Tatle training time_________Epochs_____Each epochs training time_____dataset s
 Try temporal convolutional network (TCN) architecture.
 
 For most deep learning practitioners, sequence modeling is synonymous with recurrent networks. Yet recent results indicate that convolutional architectures can outperform recurrent networks on tasks such as audio synthesis and machine translation. Given a new sequence modeling task or dataset, which architecture should one use? Shaojie Bai conduct a systematic evaluation of generic convolutional and recurrent architectures for sequence modeling. The models are evaluated across a broad range of standard tasks that are commonly used to benchmark recurrent networks. Their results indicate that a simple convolutional architecture outperforms canonical recurrent networks such as LSTMs across a diverse range of tasks and datasets, while demonstrating longer effective memory. They conclude that the common association between sequence modeling and recurrent networks should be reconsidered, and convolutional networks should be regarded as a natural starting point for sequence modeling tasks.
-
+- [An Empirical Evaluation of Generic Convolutional and Recurrent Networks
+for Sequence Modeling](https://arxiv.org/pdf/1803.01271.pdf)
 
 

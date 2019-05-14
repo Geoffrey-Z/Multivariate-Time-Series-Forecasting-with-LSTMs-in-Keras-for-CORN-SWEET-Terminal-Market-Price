@@ -48,7 +48,7 @@ pyplot.show()
 This architecture is a relatively simple LSTM network. It achieves an accuracy with an r-squared value of 0.82 on the test dataset. This was the simplest and most accurate model out of several variants I tried. Listed below are some of the variants I tried out.
 
 - Increasing the number of epochs from 125 to 1000. This resulted by 8 times training time. However, the accuracy decreased by ~4.8%. The model stared overfiting at 123th epoch. 
-- Increasing the number of batch_size from 1 to 72. This resulted in a faster training time. However, the accuracy decreased by ~1%.
+- Increasing the number of batch_size from 1 to 72. This resulted in a faster training time. However, the accuracy decreased by ~2.3%.
 - Increasing the number of neurons in the first hidden layer from 50 to 4. This resulted in a faster training time. However, the accuracy decreased by ~1%.
 - Adding another hidden layer after the first hidden layer. This did not affect accuracy.
 

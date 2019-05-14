@@ -45,7 +45,7 @@ pyplot.legend()
 pyplot.show()
 ```
 
-This architecture is a relatively simple LSTM network. It achieves an accuracy with an r-squared value of 0.85 on the validation dataset. This was the simplest and most accurate model out of several variants I tried. Listed below are some of the variants I tried out.
+This architecture is a relatively simple LSTM network. It achieves an accuracy with an r-squared value of 0.85 on the test dataset. This was the simplest and most accurate model out of several variants I tried. Listed below are some of the variants I tried out.
 
 - Increasing the number of epochs from 125 to 1000. This resulted by 8 times training time. However, the accuracy decreased by ~4.8%. The model stared overfiting at 123th epoch. 
 - Increasing the number of batch_size from 1 to 72. This resulted in a faster training time. However, the accuracy decreased by ~1%.
@@ -54,11 +54,14 @@ This architecture is a relatively simple LSTM network. It achieves an accuracy w
 
 ## Results
 
-When trained for 10 epochs with a batch size of 50, this network is able to obtain an accuracy of 96% with a ~0.15 loss on the test dataset.
+When trained for 125 epochs with a batch size of 1, this network is able to obtain an accuracy with an r-squared value of 0.85 on the test dataset.
+We can see that the model did an excellent job of fitting both the training and the test datasets.
+
+![Results](Results.png)
 
 ## Benchmarks
 
-There are many different traffic sign datasets and benchmarks in common use today. Generalizing across datasets, state-of-the-art models are usually able to reach accuracies in the 94-98% range. This puts my model in the lower end of the spectrum for state-of-the-art models.
+There are many different Time Series Forecasting benchmarks in common use today. Generalizing across datasets, LSTMs for Univariate Time Series Forecasting models are usually able to reach accuracies in the 94-98% range. This puts my model in the lower end of the spectrum for Time Series Forecasting models.
 
 ## Learning Curves
 

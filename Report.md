@@ -57,7 +57,7 @@ This architecture is a relatively simple LSTM network. It achieves an accuracy w
 When trained for 125 epochs with a batch size of 1, this network is able to obtain an accuracy with an r-squared value of 0.85 on the test dataset.
 We can see that the model did an excellent job of fitting both the training and the test datasets.
 
-![Results](Results.png)
+![Results](assets/Results.png)
 
 ## Benchmarks
 

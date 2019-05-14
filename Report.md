@@ -45,7 +45,7 @@ pyplot.legend()
 pyplot.show()
 ```
 
-This architecture is a relatively simple LSTM network. It achieves an accuracy with an r-squared value of 0.85 on the test dataset. This was the simplest and most accurate model out of several variants I tried. Listed below are some of the variants I tried out.
+This architecture is a relatively simple LSTM network. It achieves an accuracy with an r-squared value of 0.82 on the test dataset. This was the simplest and most accurate model out of several variants I tried. Listed below are some of the variants I tried out.
 
 - Increasing the number of epochs from 125 to 1000. This resulted by 8 times training time. However, the accuracy decreased by ~4.8%. The model stared overfiting at 123th epoch. 
 - Increasing the number of batch_size from 1 to 72. This resulted in a faster training time. However, the accuracy decreased by ~1%.
@@ -61,7 +61,7 @@ We can see that the model did an excellent job of fitting both the training and 
 
 ## Benchmarks
 
-There are many different Time Series Forecasting benchmarks in common use today. Generalizing across datasets, LSTMs for Univariate Time Series Forecasting models are usually able to reach accuracies in the 94-98% range. This puts my model in the lower end of the spectrum for Time Series Forecasting models.
+There are many different Time Series Forecasting benchmarks in common use today. Generalizing across datasets, Multivariate-Time-Series-Forecasting-with-LSTMs and Univariate-Time-Series-Forecasting-with-LSTMs not make much diffrent of the accuracy (0.82 R2 vs. 0.85 R2), but training time increas.
 
 ## Learning Curves
 
@@ -92,3 +92,12 @@ __Tatle training time_________Epochs_____Each epochs training time_____dataset s
         1000s                  1000                1s                     770                1           1
         
         1000s                  1000                0s                      64                1           1
+
+## Future study
+
+Try temporal convolutional network (TCN) architecture.
+
+For most deep learning practitioners, sequence modeling is synonymous with recurrent networks. Yet recent results indicate that convolutional architectures can outperform recurrent networks on tasks such as audio synthesis and machine translation. Given a new sequence modeling task or dataset, which architecture should one use? Shaojie Bai conduct a systematic evaluation of generic convolutional and recurrent architectures for sequence modeling. The models are evaluated across a broad range of standard tasks that are commonly used to benchmark recurrent networks. Their results indicate that a simple convolutional architecture outperforms canonical recurrent networks such as LSTMs across a diverse range of tasks and datasets, while demonstrating longer effective memory. They conclude that the common association between sequence modeling and recurrent networks should be reconsidered, and convolutional networks should be regarded as a natural starting point for sequence modeling tasks.
+
+
+

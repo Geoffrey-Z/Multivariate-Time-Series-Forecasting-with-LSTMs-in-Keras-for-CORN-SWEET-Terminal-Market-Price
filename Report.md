@@ -72,5 +72,14 @@ Shown below is a plot of the model's loss on the training and validation dataset
 ## Training Time
 
 The relationship between training time and number of epochs is linear.
+The relationship between training time and dataset size is linear.
+The relationship between training time and batch_size is negative linear.
+The relationship between training time and number of variate is negative linear.
 
-The relationship between training time and dataset size is also linear.
+   Tatle training time       Epochs       Each epochs training time     dataset size    batch_size    variate
+          25s                    50                0s                     770               72           3
+         500s                  1000                0s                     770               72           3
+         500s                   125                4s                     770                1           3
+        2000s                  1000                2s                     770                1           3
+        1000s                  1000                1s                     770                1           1
+        1000s                  1000                0s                      64                1           1

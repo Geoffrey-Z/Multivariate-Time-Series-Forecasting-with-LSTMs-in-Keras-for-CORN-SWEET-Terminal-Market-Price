@@ -10,7 +10,7 @@ This project implements a street sign Sweet Corn Terminal Price Forecasting usin
 
 The following dataset were considered for this project:
 
-- [USDA - Fruit and Vegetable - Terminal Market Price - Reports](https://marketnews.usda.gov/mnp/fv-report?commAbr=CORN&rowDisplayMax=25&startIndex=1&repType=termPriceWeekly&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&repTypeChanger=termPriceWeekly&type=termPrice&locChoose=commodity&locAbrfrom=HX&locAbrlength=1&locAbr=&commodityClass=allcommodity&y=15&y=15&y=11&y=11&y=13&y=15&y=14&y=8&y=0&y=9&y=9&y=11&y=7&y=8&y=12&x=32&x=28&x=27&x=52&x=36&x=40&x=40&x=24&x=34&x=50&x=28&x=52&x=25&x=23&x=43&locAbrPass=ALL%7C%7C&refine=false&step3date=true&repDate=01%2F07%2F2017&endDate=12%2F29%2F2018&organic=&environment=&_environment=1&Run=Run) - a USDA Datasource for Terminal Market Price of Fruit and Vegetable.
+- [USDA - Fruit and Vegetable - Terminal Market Price - Reports](https://marketnews.usda.gov/mnp/fv-report?commAbr=CORN&rowDisplayMax=25&startIndex=1&repType=termPriceWeekly&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&reportConfig=true&repTypeChanger=termPriceWeekly&type=termPrice&locChoose=commodity&locAbrfrom=HX&locAbrlength=1&locAbr=&commodityClass=allcommodity&y=15&y=15&y=11&y=11&y=13&y=15&y=14&y=8&y=0&y=9&y=9&y=11&y=7&y=8&y=12&x=32&x=28&x=27&x=52&x=36&x=40&x=40&x=24&x=34&x=50&x=28&x=52&x=25&x=23&x=43&locAbrPass=ALL%7C%7C&refine=false&step3date=true&repDate=01%2F07%2F2017&endDate=12%2F29%2F2018&organic=&environment=&_environment=1&Run=Run) - a USDA data source for Terminal Market Price of Fruit and Vegetable.
 - Original download file: [terminal prices sweet corn.xlsx](https://github.com/Geoffrey-Z/Multivariate-Time-Series-Forecasting-with-LSTMs-in-Keras-for-CORN-SWEET-Terminal-Market-Price/blob/master/terminal%20prices%20sweet%20corn.xlsx)
 
 The datasets below were selected due to its simplicity and smaller size. The USDA dataset is very large, and has far more data than is necessary for a small-scale project like this.
@@ -20,7 +20,7 @@ The datasets below were selected due to its simplicity and smaller size. The USD
 
 ## Splitting
 
-The CORN_SWEET_Price_Weekly_Multivariate_Forecasting dataset is splited into  into Training Set (first 70% rows) and Validation Set (remaining 30% rows).
+The CORN_SWEET_Price_Weekly_Multivariate_Forecasting dataset is splitted into Training Set (first 70% rows) and Validation Set (remaining 30% rows).
 
 ## Input Data Visualization
 
@@ -30,7 +30,7 @@ The CORN_SWEET_Price_Weekly_Multivariate_Forecasting dataset contains 1099 recor
 
 ## Network Architecture
 
-I used a LSTM to forecastin the price of sweet corn. I chose this type of model because they are known to perform quite well on time Series datasets, such as Airline Passengers prediction problem and Air Pollution Forecasting. The architecture of the final version of the Keras model is shown below.
+I used a LSTM to forecasting the price of sweet corn. I chose this type of model because they are known to perform quite well on time Series datasets, such as Airline Passengers prediction problem and Air Pollution Forecasting. The architecture of the final version of the Keras model is shown below.
 
 ```python
 # design network
@@ -50,9 +50,9 @@ pyplot.show()
 This architecture is a relatively simple LSTM network. It achieves an accuracy with an r-squared value of 0.82 on the test dataset. This was the simplest and most accurate model out of several variants I tried. Listed below are some of the variants I tried out.
 
 - Decreasing the number of dataset size from 770 (one price each week) to 64 (one price each month). This resulted by almost same training time. However, the accuracy decreased from r-squared value of 0.82 to 0.22.
-- Increasing the number of epochs from 125 to 1000. This resulted by 8 times training time. However, the accuracy decreased by ~4.8%. The model stared overfiting at 123th epoch. 
-- Increasing the number of batch_size from 1 to 72. This resulted in a faster training time. However, the accuracy decreased by ~2.3%.
-- Increasing the number of neurons in the first hidden layer from 50 to 4. This resulted in a almost same training time. This did not affect accuracy.
+- Increasing the number of epochs from 125 to 1000. This resulted by 8 times training time. However, the accuracy decreased by ~4.8%. The model stared overfitting at 123th epoch. 
+- Increasing the number of batch size from 1 to 72. This resulted in a faster training time. However, the accuracy decreased by ~2.3%.
+- Increasing the number of neurons in the first hidden layer from 50 to 4. This resulted in an almost same training time. This did not affect accuracy.
 - Adding another hidden layer after the first hidden layer. This did not affect accuracy.
 
 ### Code
@@ -70,7 +70,7 @@ We can see that the model did an excellent job of fitting both the training and 
 
 ## Benchmarks
 
-There are many different Time Series Forecasting benchmarks in common use today. Generalizing across datasets, Multivariate-Time-Series-Forecasting-with-LSTMs and Univariate-Time-Series-Forecasting-with-LSTMs not make much diffrent of the accuracy (0.82 R2 vs. 0.85 R2), but training time increas.
+There are many different Time Series Forecasting benchmarks in common use today. Generalizing across datasets, Multivariate-Time-Series-Forecasting-with-LSTMs and Univariate-Time-Series-Forecasting-with-LSTMs not make much different of the accuracy (0.82 R2 vs. 0.85 R2), but training time increase.
 - [How to Create an ARIMA Model for Time Series Forecasting in Python](https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/)
 - [Time Series Prediction with LSTM Recurrent Neural Networks in Python with Keras](https://machinelearningmastery.com/time-series-prediction-lstm-recurrent-neural-networks-python-keras/)
 - [Multivariate Time Series Forecasting with LSTMs in Keras](https://machinelearningmastery.com/multivariate-time-series-forecasting-lstms-keras/)
@@ -87,11 +87,11 @@ The relationship between training time and number of epochs is linear.
 
 The relationship between training time and dataset size is linear.
 
-The relationship between training time and batch_size is negative linear.
+The relationship between training time and batch size is negative linear.
 
 The relationship between training time and number of variate is negative linear.
 
-|Tatle training time|Number of Epochs|Training time of each epoch|Dataset size|Batch size|Number of independent variables
+|Total training time|Number of Epochs|Training time of each epoch|Dataset size|Batch size|Number of independent variables
 |     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |
 |25s|50|0s|770|72|3|          
 |500s|1000|0s|770|72|3|        

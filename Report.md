@@ -52,6 +52,12 @@ This architecture is a relatively simple LSTM network. It achieves an accuracy w
 - Increasing the number of neurons in the first hidden layer from 50 to 4. This resulted in a same training time. This did not affect accuracy.
 - Adding another hidden layer after the first hidden layer. This did not affect accuracy.
 
+### Code
+- CORN_SWEET_Price_Monthly_Univariate_Forecasting: [CORN_SWEET_Price_Monthly_Univariate_Forecasting.ipynb](https://github.com/Geoffrey-Z/Multivariate-Time-Series-Forecasting-with-LSTMs-in-Keras-for-CORN-SWEET-Terminal-Market-Price/blob/master/Code/CORN_SWEET_Price_Monthly_Univariate_Forecasting.ipynb)
+- CORN_SWEET_Price_Weekly_Univariate_Forecasting: [CORN_SWEET_Price_Weekly_Univariate_Forecasting.ipynb](https://github.com/Geoffrey-Z/Multivariate-Time-Series-Forecasting-with-LSTMs-in-Keras-for-CORN-SWEET-Terminal-Market-Price/blob/master/Code/CORN_SWEET_Price_Weekly_Univariate_Forecasting.ipynb)
+- Final version: CORN_SWEET_Price_Weekly_Multivariate_Forecasting: [CORN_SWEET_Price_Weekly_Multivariate_Forecasting.ipynb](https://github.com/Geoffrey-Z/Multivariate-Time-Series-Forecasting-with-LSTMs-in-Keras-for-CORN-SWEET-Terminal-Market-Price/blob/master/Code/CORN_SWEET_Price_Weekly_Multivariate_Forecasting.ipynb)
+
+
 ## Results
 
 When trained for 125 epochs with a batch size of 1, this network is able to obtain an accuracy with an r-squared value of 0.85 on the test dataset.

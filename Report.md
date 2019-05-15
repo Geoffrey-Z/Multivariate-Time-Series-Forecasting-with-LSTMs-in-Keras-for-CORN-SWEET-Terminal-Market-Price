@@ -1,8 +1,6 @@
 # Sweet Corn Terminal Price Forecasting with Multivariate LSTMs in Keras
 Weiling(Geoffrey) Zhu
 
-Report webside: https://github.com/Geoffrey-Z/Multivariate-Time-Series-Forecasting-with-LSTMs-in-Keras-for-CORN-SWEET-Terminal-Market-Price/blob/master/Report.md
-
 ## Abstract
 This project implements a street sign Sweet Corn Terminal Price Forecasting using LSTMs in Keras. This project is written in Python 3. The `keras`, `tensorflow`, and `scikit-learn` packages were used to build the model. Data visualization and preprocessing was done with the `matplotlib` packages.
 

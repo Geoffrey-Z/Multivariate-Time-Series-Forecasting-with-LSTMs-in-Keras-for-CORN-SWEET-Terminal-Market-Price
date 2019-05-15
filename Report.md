@@ -1,4 +1,4 @@
-# Sweet Corn Terminal Price Forecasting with LSTMs in Keras
+# Sweet Corn Terminal Price Forecasting with Multivariate LSTMs in Keras
 Weiling(Geoffrey) Zhu
 
 ## Abstract
@@ -105,5 +105,3 @@ Try temporal convolutional network (TCN) architecture.
 For most deep learning practitioners, sequence modeling is synonymous with recurrent networks. Yet recent results indicate that convolutional architectures can outperform recurrent networks on tasks such as audio synthesis and machine translation. Given a new sequence modeling task or dataset, which architecture should one use? Shaojie Bai conduct a systematic evaluation of generic convolutional and recurrent architectures for sequence modeling. The models are evaluated across a broad range of standard tasks that are commonly used to benchmark recurrent networks. Their results indicate that a simple convolutional architecture outperforms canonical recurrent networks such as LSTMs across a diverse range of tasks and datasets, while demonstrating longer effective memory. They conclude that the common association between sequence modeling and recurrent networks should be reconsidered, and convolutional networks should be regarded as a natural starting point for sequence modeling tasks.
 - [An Empirical Evaluation of Generic Convolutional and Recurrent Networks
 for Sequence Modeling](https://arxiv.org/pdf/1803.01271.pdf)
-
-

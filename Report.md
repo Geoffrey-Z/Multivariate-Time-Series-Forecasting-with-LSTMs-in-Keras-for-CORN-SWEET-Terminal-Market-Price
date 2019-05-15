@@ -89,7 +89,7 @@ The relationship between training time and batch_size is negative linear.
 
 The relationship between training time and number of variate is negative linear.
 
-|Tatle training time|Number of Epochs|Training time of each epochs|Dataset size|Batch size|Number of independent variables
+|Tatle training time|Number of Epochs|Training time of each epoch|Dataset size|Batch size|Number of independent variables
 |     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |
 |25s|50|0s|770|72|3|          
 |500s|1000|0s|770|72|3|        

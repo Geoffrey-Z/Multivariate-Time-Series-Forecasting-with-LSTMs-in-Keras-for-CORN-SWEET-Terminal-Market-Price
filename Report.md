@@ -56,10 +56,9 @@ This architecture is a relatively simple LSTM network. It achieves an accuracy w
 - Adding another hidden layer after the first hidden layer. This did not affect accuracy.
 
 ### Code
-- CORN_SWEET_Price_Monthly_Univariate_Forecasting: [CORN_SWEET_Price_Monthly_Univariate_Forecasting.ipynb](https://github.com/Geoffrey-Z/Multivariate-Time-Series-Forecasting-with-LSTMs-in-Keras-for-CORN-SWEET-Terminal-Market-Price/blob/master/Code/CORN_SWEET_Price_Monthly_Univariate_Forecasting.ipynb)
-- CORN_SWEET_Price_Weekly_Univariate_Forecasting: [CORN_SWEET_Price_Weekly_Univariate_Forecasting.ipynb](https://github.com/Geoffrey-Z/Multivariate-Time-Series-Forecasting-with-LSTMs-in-Keras-for-CORN-SWEET-Terminal-Market-Price/blob/master/Code/CORN_SWEET_Price_Weekly_Univariate_Forecasting.ipynb)
-- Final version: CORN_SWEET_Price_Weekly_Multivariate_Forecasting: [CORN_SWEET_Price_Weekly_Multivariate_Forecasting.ipynb](https://github.com/Geoffrey-Z/Multivariate-Time-Series-Forecasting-with-LSTMs-in-Keras-for-CORN-SWEET-Terminal-Market-Price/blob/master/Code/CORN_SWEET_Price_Weekly_Multivariate_Forecasting.ipynb)
-
+- Final version: CORN_SWEET_Price_Weekly_Univariate_Forecasting: [CORN_SWEET_Price_Weekly_Univariate_Forecasting.ipynb](https://github.com/Geoffrey-Z/Multivariate-Time-Series-Forecasting-with-LSTMs-in-Keras-for-CORN-SWEET-Terminal-Market-Price/blob/master/Code/CORN_SWEET_Price_Weekly_Univariate_Forecasting.ipynb)
+- Multivariate version: CORN_SWEET_Price_Weekly_Multivariate_Forecasting: [CORN_SWEET_Price_Weekly_Multivariate_Forecasting.ipynb](https://github.com/Geoffrey-Z/Multivariate-Time-Series-Forecasting-with-LSTMs-in-Keras-for-CORN-SWEET-Terminal-Market-Price/blob/master/Code/CORN_SWEET_Price_Weekly_Multivariate_Forecasting.ipynb)
+- Monthly version: CORN_SWEET_Price_Monthly_Univariate_Forecasting: [CORN_SWEET_Price_Monthly_Univariate_Forecasting.ipynb](https://github.com/Geoffrey-Z/Multivariate-Time-Series-Forecasting-with-LSTMs-in-Keras-for-CORN-SWEET-Terminal-Market-Price/blob/master/Code/CORN_SWEET_Price_Monthly_Univariate_Forecasting.ipynb)
 
 ## Results
 

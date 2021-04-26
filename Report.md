@@ -24,7 +24,7 @@ The CORN_SWEET_Price_Weekly_Multivariate_Forecasting dataset is splitted into Tr
 
 ## Input Data Visualization
 
-The CORN_SWEET_Price_Weekly_Multivariate_Forecasting dataset contains 1099 records, 4 Columns. It contains weekly terminal prices for BI-COLOR, WHITE and YELLOW CORN-SWEET in U.S. from 1/1/1998 to 12/31/2018. The visualization below showing the 21 years of data for each Variety.
+The CORN_SWEET_Price_Weekly_Multivariate_Forecasting dataset contains 1100 records, 4 Columns. It contains weekly terminal prices for BI-COLOR, WHITE and YELLOW CORN-SWEET in U.S. from 1/1/1998 to 12/31/2018. The visualization below showing the 21 years of data for each Variety.
 
 ![Data_Visualization.png](assets/Data_Visualization.png)
 
